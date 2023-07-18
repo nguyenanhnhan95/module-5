@@ -54,6 +54,9 @@ const resultTwo = ratingCoursesTwo.map((course)=>{
     return course.id+"-"+course.title+"-"+course.rating
 })
 // Yêu cầu 3: Sử dụng cú pháp ES6 đã học viết hàm trả về một mảng mới gộp 2 mảng courses và addedCourses							
-
-const resultThree=[...courses,...addedCourses]
-console.log(resultThree)
+const requestThree=(courses,addedCourses)=>{
+    return [...courses,...addedCourses]
+}
+console.log(requestThree(courses,addedCourses))
+// const resultThree=[...courses,...addedCourses]
+// console.log(resultThree)
