@@ -1,7 +1,8 @@
 function Welcome(props) {
-    console.log(props);
+   
     return (
-        <h1>Hello: {props.name}</h1>
+    <div Welcome>Name : {props.name}
+    <h1>{props.id}</h1></div>
     );
 }
 export default Welcome;
