@@ -8,14 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sona | Template</title>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
   <!-- Css Styles -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -159,99 +158,49 @@
 </header>
 <!-- Header End -->
 
-<!--table manager-->
-<div class="container-xl">
-  <div class="table-responsive">
-    <div class="table-wrapper">
-      <div class="table-title">
-        <div class="row mb-3">
-          <div class="col-md-8"></div>
-          <div class="col-md-4" style="text-align: right">
-            <button type="button"   class="btn btn-success" ><i
-                    class="material-icons">&#xE147;</i> <span>Add New Contract</span></button>
-            <!--                  <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>                  -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-8"><h2>Contract<b>Management</b></h2></div>
-          <div class="col-sm-4">
-            <div class="search-box">
-              <i class="material-icons">&#xE8B6;</i>
-              <input type="text" class="form-control" placeholder="Search&hellip;">
-            </div>
-          </div>
-        </div>
+
+<div class="wrapper">
+  <div class="form-left" style="background-image: url('https://cdn3.ivivu.com/2016/10/ninh-van-bay-ivivu-1.png')" >
+
+  </div>
+  <form class="form-right">
+    <h2 class="text-uppercase">Add New Contract</h2>
+    <div class="row">
+      <div class="col-sm-6 mb-3">
+        <label>Name Customer</label>
+        <input type="text" name="name_customer" id="name_customer" class="input-field">
       </div>
-      <table class="table table-striped table-hover table-bordered">
-        <thead>
-        <tr>
-          <th>#</th>
-          <th>Contract Code</th>
-          <th>Start Date</th>
-          <th>End Date</th>
-          <th>Deposit</th>
-          <th>Total Payment</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>1</td>
-          <td>15246</td>
-          <td>2021-02-27</td>
-          <td>2023-01-11</td>
-          <td>10000</td>
-          <td>2100000</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>15246</td>
-          <td>2021-02-27</td>
-          <td>2023-01-11</td>
-          <td>10000</td>
-          <td>2100000</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>15246</td>
-          <td>2021-02-27</td>
-          <td>2023-01-11</td>
-          <td>10000</td>
-          <td>2100000</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>15246</td>
-          <td>2021-02-27</td>
-          <td>2023-01-11</td>
-          <td>10000</td>
-          <td>2100000</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>15246</td>
-          <td>2021-02-27</td>
-          <td>2023-01-11</td>
-          <td>10000</td>
-          <td>2100000</td>
-        </tr>
-        </tbody>
-      </table>
-      <div class="clearfix">
-        <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
-        <ul class="pagination">
-          <li class="page-item disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
-          <li class="page-item"><a href="#" class="page-link">1</a></li>
-          <li class="page-item"><a href="#" class="page-link">2</a></li>
-          <li class="page-item active"><a href="#" class="page-link">3</a></li>
-          <li class="page-item"><a href="#" class="page-link">4</a></li>
-          <li class="page-item"><a href="#" class="page-link">5</a></li>
-          <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-double-right"></i></a>
-          </li>
-        </ul>
+      <div class="col-sm-6 mb-3">
+        <label>Service Name</label>
+        <input type="text" name="name_service" id="name_service" class="input-field">
       </div>
     </div>
-  </div>
+    <div class="row">
+      <div class="col-sm-6 mb-3">
+        <label>Start Rental</label>
+        <input type="date" name="start_rental" id="start_rental" class="input-field">
+      </div>
+      <div class="col-sm-6 mb-3">
+        <label>End Rental</label>
+        <input type="date" name="birth" id="birth" class="input-field">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 mb-3">
+        <label>Deposit</label>
+        <input type="number" name="deposit" id="deposit" class="input-field">
+      </div>
+      <div class="col-sm-6 mb-3">
+        <label>Total Price</label>
+        <input type="number" name="total_price" id="total_price" class="input-field">
+      </div>
+    </div>
+    <div class="form-field" style="text-align: center">
+      <input type="submit" value="Comfirm" class="register" name="Add New Service">
+    </div>
+  </form>
 </div>
+
 <!-- Footer Section Begin -->
 <footer class="footer-section">
   <div class="container">
@@ -333,7 +282,23 @@
     </form>
   </div>
 </div>
-
+<div class="modal" tabindex="-1" id="addNewService">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add New Service</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Search model end -->
 
 <!-- Js Plugins -->
