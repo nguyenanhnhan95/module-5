@@ -26,11 +26,11 @@ class App extends Component{
       <div style={{ textAlign: "center", padding: 30 }}>
         <h1 style={{textAlign:"center"}}>Too List</h1>
         <input type="text" value={this.state.item} onChange={this.handleChange}></input>
-      <button onClick={this.handleAddItem}>ADD</button>
+      <button onClick={this.handleAddItem.bind(this)}>ADD</button>
      {this.state.list.map((item,index)=>(
-      <div key={index}>
+      <p key={index}>
       <p style={{textAlign:"left"}}><span>{index+1}:</span>{item}</p>
-      </div>
+      </p>
      ))}
    
    
