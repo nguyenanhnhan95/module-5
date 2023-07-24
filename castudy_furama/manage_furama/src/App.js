@@ -10,16 +10,34 @@ import AddNewCustomer from './components/AddNewCustomer';
 import AddNewService from './components/AddNewService';
 import AddNewContract from './components/AddNewContract';
 import ServiceDetail from './components/ServiceDetail';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { StrictMode } from 'react';
+import EditService from './components/EditService';
+import EditCustomer from './components/EditCustomer';
 function App() {
   return (
   <div>
-    <Header/>
-    {/* <Facility/> */}
+    <StrictMode>
+      <BrowserRouter>
+        <Header/>
+          <Routes>
+            <Route path='/' element={<Facility/>}/>
+            <Route path='/services' element={<ManageService/>}/>
+            <Route path='/customers' element={<ManageCustomer/>}/>
+            <Route path='/contracts' element={<ManageContract/>}/>
+            <Route path='/detail/:id' element={<ServiceDetail/>}/>
+            <Route path='/newservice' element={<AddNewService/>}/>
+            <Route path='/newcustomer' element={<AddNewCustomer/>}/>
+            <Route path='/editservice/:id' element={<EditService/>}/>
+            <Route path='/editcustomer/:id' element={<EditCustomer/>}/>
+          </Routes>
     {/* <ManageContract/> */}
     {/* <ManageService/> */}
     {/* <AddNewCustomer/> */}
-    <ServiceDetail/>
-    <Footer/>
+    {/* <ServiceDetail/> */}
+          <Footer/>
+          </BrowserRouter>
+    </StrictMode>
   </div>
   );
 }

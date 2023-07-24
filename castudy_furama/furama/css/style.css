@@ -2446,8 +2446,10 @@ table.table td i {
 	margin-top: 6px;
 	font-size: 95%;
 }
+
+
 .wrapper{
-	max-width: 850px;
+	max-width: 1200px;
 	background-color: #fff;
 	border-radius: 10px;
 	position: relative;
@@ -2462,7 +2464,7 @@ table.table td i {
 	border-bottom-left-radius: 10px;
 	padding: 20px 40px;
 	position: relative;
-	width: 100%;
+	width: 70%;
 	color: #fff;
 }
 

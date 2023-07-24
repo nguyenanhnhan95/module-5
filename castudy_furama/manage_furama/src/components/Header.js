@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 function Header(){
     return(        
                 <header className="header-section">
@@ -8,7 +9,7 @@ function Header(){
                         <div className="col-lg-6">
                           <ul className="tn-left">
                             <li><i className="fa fa-phone" /> (12) 345 67890</li>
-                            <li><i className="fa fa-envelope" /> info.colorlib@gmail.com</li>
+                            <li><i className="fa fa-envelope" /> furama@gmail.com</li>
                           </ul>
                         </div>
                         <div className="col-lg-6">
@@ -42,17 +43,17 @@ function Header(){
                               <nav className="mainmenu">
                                 <ul>
                                   <li className="active"><a href="./index.html">Home</a></li>
-                                  <li><a href="./rooms.html">Rooms</a></li>
-                                  <li><a href="./about-us.html">About Us</a></li>
-                                  <li><a href="./pages.html">Pages</a>
+                                  <li><Link to="/">Service</Link></li>
+                                  <li><Link to="/">Management </Link>
                                     <ul className="dropdown">
-                                      <li><a href="./room-details.html">Room Details</a></li>
-                                      <li><a href="./blog-details.html">Blog Details</a></li>
-                                      <li><a href="/#">Family Room</a></li>
-                                      <li><a href="/#">Premium Room</a></li>
+                                    
+                                      <li><Link to="/services">Service </Link></li>
+                                      <li><Link to="/contracts">Contract</Link></li>
+                                      <li><Link to="/customers">Customer</Link></li>
                                     </ul>
                                   </li>
                                   <li><a href="./blog.html">News</a></li>
+                                  <li><a href="./about-us.html">About Us</a></li>
                                   <li><a href="./contact.html">Contact</a></li>
                                 </ul>
                               </nav>

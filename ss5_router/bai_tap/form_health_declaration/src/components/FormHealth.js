@@ -55,7 +55,7 @@ function FormHealth(){
             </div>
             <div>
             <label htmlFor="birth">birth</label><br />
-            <Field id="birth" name="birth" type="text"/>
+            <Field  id="birth" name="birth" type="text"/>
             <ErrorMessage name="birth" component="div"/>
             </div>
             <div>

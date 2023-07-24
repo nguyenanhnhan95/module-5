@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 function ManageCustomer(){
     return(
     
@@ -10,7 +11,9 @@ function ManageCustomer(){
                         <div className="row mb-3">
                           <div className="col-md-8" />
                           <div className="col-md-4" style={{textAlign: 'right'}}>
+                          <Link to={`/newcustomer`}>
                             <button type="button" data-bs-toggle="modal" data-bs-target="#addNewService" className="btn btn-success"><i className="material-icons"></i> <span>Add New Service</span></button>
+                            </Link>
                             {/*                  <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>                  */}
                           </div>
                         </div>
@@ -50,7 +53,7 @@ function ManageCustomer(){
                             <td>Vip</td>
                             <td>
                               <a href="#" className="view" title="View" data-toggle="tooltip"><i className="material-icons"></i></a>
-                              <a href="#" className="edit" title="Edit" data-toggle="tooltip"><i className="material-icons"></i></a>
+                              <Link to={`/editcustomer/${1}`} className="edit" title="Edit" data-toggle="tooltip"><i className="material-icons"></i></Link>
                               <a href="#" className="delete" title="Delete" data-toggle="tooltip"><i className="material-icons"></i></a>
                             </td>
                           </tr>

@@ -6,7 +6,7 @@ function AddNewCustomer(){
                   <div className="form-left" style={{backgroundImage: 'url("https://cdn3.ivivu.com/2016/10/ninh-van-bay-ivivu-1.png")'}}>
                   </div>
                   <form className="form-right">
-                    <h2 className="text-uppercase">Add New Customer</h2>
+                    <h2 className="text-uppercase" style={{textAlign: 'center'}}>Add New Customer</h2>
                     <div className="row">
                       <div className="col-sm-6 mb-3">
                         <label>Name</label>

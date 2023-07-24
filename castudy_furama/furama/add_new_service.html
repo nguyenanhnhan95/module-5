@@ -161,70 +161,108 @@
 
 
 <div class="wrapper">
-    <div class="form-left" style="background-image: url('https://cdn3.ivivu.com/2016/10/ninh-van-bay-ivivu-1.png')" >
+    <div class="form-left" style="background-image: url('https://cdn3.ivivu.com/2016/10/ninh-van-bay-ivivu-1.png')">
 
     </div>
     <form class="form-right">
-        <h2 class="text-uppercase">Add New Service</h2>
+        <h2 class="text-uppercase" style="text-align: center">Add New Service</h2>
         <div class="row">
             <div class="col-sm-6 mb-3">
                 <label>Name Service</label>
                 <input type="text" name="first_name" id="first_name" class="input-field">
             </div>
-            <div class="col-sm-6 mb-3">
+            <div class="col-sm-3 mb-3">
                 <label>Service Areas</label>
                 <input type="number" name="last_name" id="last_name" class="input-field">
             </div>
+            <div class="col-sm-3 mb-3">
+                <label>Price Rental</label>
+                <input type="number" name="price_rental" id="price_rental" class="input-field">
+            </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 mb-3">
-                <label>Maximum Quantity</label>
+            <div class="col-sm-3 mb-3">
+                <label> Quantity</label>
                 <input type="text" name="maximum_quantity" id="maximum_quantity" class="input-field">
             </div>
-            <div class="col-sm-6 mb-3">
-                <label>Room Standard</label>
-                <select >
-                    <option>One</option>
-                    <option>Two</option>
-                    <option>Three</option>
-                    <option>Four</option>
-                    <option>Five</option>
-                </select>
+            <div class="col-sm-3 mb-3">
+                <label>Standard</label>
+                <input type="number" name="standard" id="standard" class="input-field">
+            </div>
+            <div class="col-sm-3 mb-3">
+                <label>Pool</label>
+                <input type="number" name="pool" id="pool" class="input-field">
+            </div>
+            <div class="col-sm-3 mb-3">
+                <label>Floor</label>
+                <input type="number" name="floor" id="floor" class="input-field">
+            </div>
+        </div>
+<!--        <div class="row">-->
+<!--            <div class="col-sm-6 mb-3">-->
+<!--                <label>Type Service</label>-->
+<!--                <select id="standard_service" name="standard_service" class="rating">-->
+<!--                    <option value="1">1</option>-->
+<!--                    <option value="2">2</option>-->
+<!--                    <option value="3">3</option>-->
+<!--                    <option value="4">4</option>-->
+<!--                    <option value="5">5</option>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--        </div>-->
 
+        <div class="row">
+            <div class="col-sm-6 mb-3">
+            <label>Free</label>
+            </div>
+            <div class="col-sm-6 mb-3">
+                <label>Open Image File</label>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 mb-3">
-                <label>
-                    Accompanied Service</label>
-                <input type="text" name="accompanied_service" id="accompanied_service" class="input-field">
+            <div class="col-sm-2 mb-3">
+                <label><span style="margin-right: 5%">Wifi</span> <input type="checkbox" name="free[]"
+                                                                          value="wifi"></label>
+            </div>
+            <div class="col-sm-2 mb-3">
+                <label><span style="margin-right: 5%">Coffee</span> <input type="checkbox" name="free[]"
+                                                                            value="coffee"></label>
+            </div>
+            <div class="col-sm-2 mb-3">
+                <label><span style="margin-right: 5%">Bar mini</span> <input type="checkbox" name="free[]"
+                                                                              value="bar mini"></label>
             </div>
             <div class="col-sm-6 mb-3">
-                <label>Other facilities</label>
-                <select>
-                    <option>Massage</option>
-                    <option>Karaoke</option>
-                    <option>Drink</option>
-                    <option>Tour</option>
-                    <option>Food</option>
-                </select>
+                <input type="file">
             </div>
         </div>
-        <div  class="row mb-3">
-            <label>Free Services</label>
-            <select>
-                <option>Wifi</option>
-                <option>Coffe</option>
-            </select>
+        <div class="row">
+            <label>Other Service</label>
         </div>
-       <div class="row mb-3">
-           <div class="col-4">
-               <label>Open Image File</label>
-           </div>
-           <div class="col-8">
-           <input type="file">
-           </div>
-       </div>
+        <div class="row">
+            <div class="col-sm-3 mb-3">
+                <label><span style="margin-right: 10%">Garden</span> <input type="checkbox" name="otherService[]"
+                                                                          value="garden"></label>
+            </div>
+            <div class="col-sm-3 mb-3">
+                <label><span style="margin-right: 10%">Gym</span> <input type="checkbox" name="otherService[]"
+                                                                          value="gym"></label>
+            </div>
+            <div class="col-sm-3 mb-3">
+                <label><span style="margin-right: 10%">Entertainment</span> <input type="checkbox" name="otherService[]"
+                                                                          value="entertainment"></label>
+            </div>
+            <div class="col-sm-3 mb-3">
+                <label><span style="margin-right: 10%">Sauna Room</span> <input type="checkbox" name="otherService[]"
+                                                                                   value="sauna room"></label>
+            </div>
+        </div>
+        <div class="row">
+            <label>Description Service</label>
+        </div>
+        <div class="row mb-3">
+            <textarea class="input-field mx-3 " id="description" name="description"></textarea>
+        </div>
         <div class="form-field" style="text-align: center">
             <input type="submit" value="Register" class="register" name="Add New Service">
         </div>

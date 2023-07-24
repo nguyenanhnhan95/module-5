@@ -26,7 +26,7 @@ function Footer(){
                   <h6>Contact Us</h6>
                   <ul>
                     <li>(12) 345 67890</li>
-                    <li>info.colorlib@gmail.com</li>
+                    <li>furama@gmail.com</li>
                     <li>856 Cordia Extension Apt. 356, Lake, United State</li>
                   </ul>
                 </div>

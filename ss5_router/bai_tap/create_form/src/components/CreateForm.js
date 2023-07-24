@@ -9,13 +9,13 @@ function CreateForm(){
         <h1>Contact Form</h1>
         <Formik initialValues={{name:"",email:"",phone:"",message:""}}
         validationSchema={yup.object({
-            name:yup.string().required("Yêu cầu ")
+            name:yup.string().required("Yêu cầu nhập tên")
             .max(20,"Không nhập vượt quá 20 ký tự :"),
             email:yup.string().email("Bạn nhập địa chỉ email không hợp lý :")
-            .required("Yêu cầu nhập :"),
-            phone:yup.string().required("Yêu cầu nhập :")
+            .required("Yêu cầu nhập email:"),
+            phone:yup.string().required("Yêu cầu nhập số điện thoại:")
             .length(10, "Số điện thoại không hợp lệ"),
-            message:yup.string().required("Yêu cầu nhập :")
+            message:yup.string().required("Yêu cầu nhập nội dung:")
             .max(50,"Không nhập vượt quá 50 ký tự :")
         })}
         onSubmit={(values)=>{
