@@ -33,6 +33,7 @@ function BookComponent(){
                                 deleteBook(book.id).then(()=>{
                                     getListBooks().then((data)=>{
                                         setBooks(data)
+                                        alert("Xóa thành công :")
                                     })
                                 }).catch(()=>{
                                     console.log("loi")

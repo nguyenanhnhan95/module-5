@@ -30,6 +30,7 @@ function EditBook(){
         onSubmit={(values)=>{
             editBook(book.id,values).then(()=>{
               navigate("/")
+              alert("Chỉnh sửa thành công :")
             })
             .catch(()=>{
                 navigate(`/edit/${book.id}`)
