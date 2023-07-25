@@ -6,7 +6,6 @@ function App() {
   const dispatch=useDispatch;
 
   function reducer(state = initState, action) {
-    console.log(action.type)
     switch (action.type) {
       case "DEPOSIT":
         return state + action.payload;
@@ -31,7 +30,7 @@ function App() {
     };
   }
 
-  const store = createStore(reducer);
+ const store = createStore(reducer);
   console.log(store);
 
   return (
