@@ -5,12 +5,22 @@ import { Link } from "react-router-dom";
 function BookComponent(){
     const [books,setBooks]= useState([])
     useEffect(()=>{
-        const getBooks=async()=>{
-            const data = await getListBooks();
-            setBooks(data)
-        }
         getBooks()
     },[])
+    const getBooks=async()=>{
+        const data = await getListBooks();
+        setBooks(data)
+    }
+    const handleDelete=(id)=>{
+        deleteBook(id).then(()=>{
+            getListBooks().then((data)=>{
+                setBooks(data)
+                alert("Xóa thành công :")
+            })
+        }).catch(()=>{
+            console.log("loi")
+        })
+    }
     return(
         <>
         <h2>Library</h2>
@@ -29,16 +39,7 @@ function BookComponent(){
                         <td>{book.title}</td>
                         <td>{book.quantity}</td>
                         <td>
-                            <button type="button" onClick={()=>{
-                                deleteBook(book.id).then(()=>{
-                                    getListBooks().then((data)=>{
-                                        setBooks(data)
-                                        alert("Xóa thành công :")
-                                    })
-                                }).catch(()=>{
-                                    console.log("loi")
-                                })
-                            }}>Delete</button>
+                            <button type="button" onClick={()=>handleDelete(book.id)}>Delete</button>
                         </td>
                         <td>
                         <Link to={`/edit/${book.id}`}>

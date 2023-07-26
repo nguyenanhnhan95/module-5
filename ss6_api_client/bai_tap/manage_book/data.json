@@ -1,29 +1,9 @@
 {
   "books": [
     {
-      "id": 2,
-      "title": "sunt aut facere repellatprovident",
-      "quantity": 10
-    },
-    {
-      "title": "nhan",
-      "quantity": 25,
-      "id": 3
-    },
-    {
-      "title": "ádasd",
-      "quantity": -1,
-      "id": 5
-    },
-    {
-      "title": "ádads",
-      "quantity": 5,
-      "id": 6
-    },
-    {
-      "title": "sang1",
-      "quantity": 15,
-      "id": 7
+      "title": "ádasd45",
+      "quantity": 554,
+      "id": 1
     }
   ]
 }
