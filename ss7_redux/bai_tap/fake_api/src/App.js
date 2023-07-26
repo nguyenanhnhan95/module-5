@@ -3,7 +3,15 @@ import { getUsersFetch,deleteUsersFetch } from "./action";
 function App(){
   const dispatch=useDispatch();
   const users=useSelector(state=>state.UserReducer.users);
-  
+  const conFirmDelete=(id)=>{
+    const conFirm=window.confirm("Bạn có muốn xóa không")
+    if(conFirm==true){
+      dispatch(deleteUsersFetch(id))
+    }
+    else{
+
+    }
+  }
   return(
     <>
     <button onClick={()=>dispatch(getUsersFetch())}>Get</button>
@@ -25,7 +33,9 @@ function App(){
           <td>{user.email}</td>
           <td>{user.address.street}</td>
           <td>
-            <button onClick={()=>dispatch(deleteUsersFetch(user.id))}>Delete</button>
+          {/* ()=>dispatch(deleteUsersFetch(user.id)) */}
+            <button onClick={()=>conFirmDelete(user.id)
+              }>Delete</button>
           </td>
           </tr>
         ))}

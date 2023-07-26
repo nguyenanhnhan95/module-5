@@ -1,0 +1,83 @@
+{
+    "services":[
+        {
+            "id":1,
+            "name":"Phòng Deluxe Twin",
+            "img":"img/room/roomone.jpg",
+            "area":30,
+            "price":649000,
+            "capacity":2,
+            "standard":3,
+            "free":["coffee"],
+            "floor":0,
+            "pool":0,
+            "decription":"Với Deluxe Twin, bạn sẽ được ngắm ánh bình minh và hoàng hôn từ khung cửa sổ phòng ngủ nhà bạn. Ngoài bồn tắm, phòng ngủ được trang bị những tiện nghi hoàn toàn mới và hiện đại cùng với nội thất xa hoa và ấm cúng."
+        },
+        {
+            "id":2,
+            "name":"Phòng Deluxe Triple",
+            "img":"img/room/romtwo.jpg",
+            "area":35,
+            "price":759000,
+            "capacity":3,
+            "standard":3,
+            "free":["wifi","coffee","bar mini"],
+            "floor":0,
+            "pool":0,
+            "decription":"Phòng Deluxe Triple với diện tích 35 m2 được thiết kế bao gồm 1 bồn tắm Jacuzzi, vòi hoa sen và một giường ngủ đôi sang trọng và ấm áp. Nhìn từ khung cừa sổ, bạn sẽ thấy được khung cảnh toàn thành phố xinh đẹp và nên thơ."
+        },
+        {
+            "id":3,
+            "name":"Phòng Deluxe Family Triple",
+            "img":"img/room/room-3.jpg",
+            "area":25,
+            "price":10000000,
+            "capacity":2,
+            "standard":3,
+            "free":["wifi"],
+            "floor":0,
+            "pool":0,
+            "decription":"Phòng có cửa sổ lớn giúp quý khách nhìn ra Thành Phố."
+        },
+        {
+            "id":4,
+            "name":"Villa Swimming-pool House For Rent In Da Nang",
+            "img":"img/room/villaone.jpg",
+            "area":140,
+            "price":500000,
+            "capacity":10,
+            "standard":3,
+            "free":["wifi"],
+            "floor":3,
+            "pool":50,
+            "decription":"Large house with an area of about 140 sqm has a yard – swimming pool – living room – warehouse – kitchen – 3 bedrooms – 3 bathrooms – balcony – terrace.1st floor: spacious yard with small beautiful swimming pool with green nature. Big living room with a sofa set. Beautiful kitchen, high-quality wooden furniture, modern amenities, dining table and beautiful space. Warehouse and mirror bathroom. 2nd floor: 3 bedrooms. 1 large room with beautiful view of the pool and mirror-door inside bathroom. 2 behind bedrooms will be fully furnished, wide shared bathroom with mirror door. 3rd floor: 2 front and behind large terraces are windy, cool. It is the ideal place for playground, party. Using the solar system for house. Fully Equipped Open Island Kitchen and dining are"
+        },
+        {
+            "id":5,
+            "name":"Green Villa In The Ocean Estates For Rent In Da Nang",
+            "img":"img/room/villatwo.jpg",
+            "area":750,
+            "price":150000000,
+            "capacity":8,
+            "standard":4,
+            free:["wifi","gym"],
+            floor:5,
+            pool:100,
+            decription:"740 square meters with garden, private swimming pool, living room, kitchen, 5 bedrooms, 6 bathrooms.The 1st floor: Garden in front of and behind the villa, swimming pool, living room, kitchen The 2nd floor: 5 bedrooms with natural light and cool view. There are a lot of trees around the villa."
+        },
+        {
+            id:6,
+            name:"Villa Small Pool Villa For Rent In Da Nang",
+            img:"img/room/villathree.jpg",
+            area:135,
+            price:15000000,
+            capacity:6,
+            standard:3,
+            free:["wifi","gym"],
+            floor:2,
+            pool:50,
+            decription:"This beautiful villa has using area of 135 square meters, 3 bedrooms, 3 bathrooms, a warehouse and a terrace. Gara for motorbikes – a courtyard – a swimming pool – a living room – a kitchen. Natural environment with a small swimming pool in front of the living room. The windy balcony with amazing view. Full furnished: TV, kitchen utensils, fridge, air conditioner, washing machine…",
+        }
+    ]
+    
+}

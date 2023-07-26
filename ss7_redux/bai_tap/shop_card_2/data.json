@@ -1,0 +1,12 @@
+{
+    "products":[
+        {
+            "id":1,
+            "name":"toyota"
+        },
+        {
+            "id":2,
+            "name":"mercedes"
+        }
+    ]
+}
