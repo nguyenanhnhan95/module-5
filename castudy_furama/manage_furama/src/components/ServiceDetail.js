@@ -18,8 +18,8 @@ function ServiceDetail(){
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
-              <div className="room-details-item">
-                <img src={service.img} alt="" />
+              <div className="room-details-item ">
+              <img src={service.img} alt="" />
                 <div className="rd-text">
                   <div className="rd-title">
                     <h3>{service.name}</h3>
@@ -59,7 +59,7 @@ function ServiceDetail(){
                       </tr>
                     </tbody>
                   </table>
-                  <p className="f-para">{service.decription}</p>
+                  <p className="f-para">{service.description}</p>
                 
                 </div>
               </div>

@@ -1,6 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState,useEffect } from "react";
+import { deleteCustomers, getCustomers } from "../services/customerService";
+import DeleteModal from "./ModalDelete";
 function ManageCustomer(){
+  const [customers,setCustomer]=useState([]);
+  useEffect(()=>{
+    showCustomer()
+  },[]);
+  const showCustomer=async()=>{
+    const data = await getCustomers();
+      setCustomer(data);
+
+  }
+  const deleteCustomer=async(id)=>{
+    deleteCustomers(id).then(()=>{
+      getCustomers().then((data)=>setCustomer(data))
+    })
+   
+  }
     return(
     
           
@@ -30,7 +48,7 @@ function ManageCustomer(){
                       <table className="table table-striped table-hover table-bordered">
                         <thead>
                           <tr>
-                            <th>#</th>
+                            <th>ID</th>
                             <th>Name </th>
                             <th>Date</th>
                             <th>Gender </th>
@@ -42,7 +60,24 @@ function ManageCustomer(){
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
+                          {customers.map((customer)=>(
+                            <tr key={customer.id}>
+                              <td>{customer.id}</td>
+                              <td>{customer.name}</td>
+                              <td>{customer.date_of_birth}</td>
+                              <td>{customer.gender}</td>
+                              <td>{customer.phone_number}</td>
+                              <td>{customer.email}</td>
+                              <td>{customer.address}</td>
+                              <td>{customer.customer_type.name}</td>
+                              <td>
+                              <a href="#" className="view" title="View" data-toggle="tooltip"><i className="material-icons"></i></a>
+                              <Link to={`/editcustomer/${1}`} className="edit" title="Edit" data-toggle="tooltip"><i className="material-icons"></i></Link>
+                              <DeleteModal service ={customer} delete={()=>deleteCustomer(customer.id)} type="primary-btn mx-2" icon={{name:"material-icons",show:"",color:"red"}} />
+                            </td>
+                            </tr>
+                          ))}
+                          {/* <tr>
                             <td>1</td>
                             <td>Nguyễn Anh Nhàn</td>
                             <td>1995-07-29</td>
@@ -116,7 +151,7 @@ function ManageCustomer(){
                               <a href="#" className="edit" title="Edit" data-toggle="tooltip"><i className="material-icons"></i></a>
                               <a href="#" className="delete" title="Delete" data-toggle="tooltip"><i className="material-icons"></i></a>
                             </td>
-                          </tr>
+                          </tr> */}
                         </tbody>
                       </table>
                       <div className="clearfix">

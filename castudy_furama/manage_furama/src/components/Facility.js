@@ -1,7 +1,29 @@
-import React from "react";
-import { ServicesList } from "../data.js/service";
+import React, { useEffect, useState } from "react";
+// import { ServicesList } from "../data.js/service";
 import { Link } from "react-router-dom";
+import { deleteServices, getServices } from "../services/serviceService";
+import DeleteModal from "./ModalDelete";
 function Facility(){
+  const [services,setService]=useState([]);
+  useEffect(()=>{
+    showServices()
+  },[]);
+  const showServices=async()=>{
+    const data = await getServices();
+      setService(data);
+
+  }
+  const deleteService=async(id)=>{
+    deleteServices(id).then(()=>{
+      getServices().then((data)=>{
+        setService(data)
+      })
+    })
+      
+  }
+   
+   
+  
     return(
                 <div>
                   <div className="breadcrumb-section">
@@ -24,7 +46,7 @@ function Facility(){
                   <section className="rooms-section spad">
                     <div className="container">
                       <div className="row">
-                        {ServicesList.map((service)=>(
+                        {services.map((service)=>(
                         <div key={service.id} className="col-lg-4 col-md-6">
                           <div className="room-item">
                             <img src={service.img} alt="" />
@@ -47,7 +69,7 @@ function Facility(){
                               <div className="row">
                                 <Link to={`/detail/${service.id}`} className="primary-btn mx-2">More Details</Link>
                                 <a href="/#" className="primary-btn mx-2">Edit</a>
-                                <a href="/#" className="primary-btn mx-2">Delete</a>
+                                <DeleteModal service ={service} delete={()=>deleteService(service.id)}  icon={{name:"primary-btn mx-2",show:"Delete"}}/>
                               </div>
                             </div>
                           </div>
