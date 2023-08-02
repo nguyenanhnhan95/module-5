@@ -29,7 +29,7 @@ function DeleteModal(props){
                 <div className="modal-body">
                   <p>Are you sure you want to delete these {service.name}</p>
                   <p className="text-warning">
-                    <small>This action cannot be undone.</small>
+                    <small style={{color:"red"}}>This action cannot be undone.</small>
                   </p>
                 </div>
               </form>

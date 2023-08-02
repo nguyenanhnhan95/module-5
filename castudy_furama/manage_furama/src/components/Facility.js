@@ -3,25 +3,39 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { deleteServices, getServices } from "../services/serviceService";
 import DeleteModal from "./ModalDelete";
+import Swal from 'sweetalert2';
+
+import { getContractDb } from "../services/contractService";
 function Facility(){
   const [services,setService]=useState([]);
   useEffect(()=>{
     showServices()
   },[]);
-  const showServices=async()=>{
-    const data = await getServices();
-      setService(data);
-
-  }
+  const showServices = () => {
+      getServices().then((data)=>{
+        setService(data)
+      }).catch(()=>{
+        
+      });
+  };
   const deleteService=async(id)=>{
     deleteServices(id).then(()=>{
       getServices().then((data)=>{
         setService(data)
-      })
+        Swal.fire({
+          icon: 'success',
+          title: 'Delete success fully!!!!',
+          showConfirmButton: false,
+          timer: 1500
+        })
     })
-      
+    }
+
+    )    
   }
-   
+   if(services.length===0){
+    return null;
+   }
    
   
     return(
@@ -68,7 +82,7 @@ function Facility(){
                               </table>
                               <div className="row">
                                 <Link to={`/detail/${service.id}`} className="primary-btn mx-2">More Details</Link>
-                                <a href="/#" className="primary-btn mx-2">Edit</a>
+                                <Link to={`/editservice/${service.id}`} className="primary-btn mx-2">Edit</Link>
                                 <DeleteModal service ={service} delete={()=>deleteService(service.id)}  icon={{name:"primary-btn mx-2",show:"Delete"}}/>
                               </div>
                             </div>

@@ -1,0 +1,135 @@
+{
+  "musics": [
+    {
+      "id": 1,
+      "nameMusic": "Nơi này có anh",
+      "nameSing": "Sơn Tùng MT-P",
+      "time": "2020-04-29",
+      "numberLikes": 34,
+      "status": {
+        "idStatus": 1,
+        "nameStatus": "Công khai"
+      }
+    },
+    {
+      "id": 2,
+      "nameMusic": "Khó vẽ nụ cười",
+      "nameSing": "Đat G",
+      "time": "2020-06-29",
+      "numberLikes": 30,
+      "status": {
+        "idStatus": 1,
+        "nameStatus": "Công khai"
+      }
+    },
+    {
+      "nameMusic": "Nguyễn Anh Nhàn",
+      "nameSing": "Nguyễn Anh Nhàn",
+      "time": "2023-08-11",
+      "numberLikes": 100000,
+      "status": {
+        "idStatus": 2,
+        "nameStatus": "Lưu trữ"
+      },
+      "id": 3
+    },
+    {
+      "nameMusic": "Tìm Lại Bầu Trời",
+      "nameSing": "Tuấn Hưng",
+      "time": "2023-08-11",
+      "numberLikes": 15000,
+      "status": {
+        "idStatus": 1,
+        "nameStatus": "Công khai"
+      },
+      "id": 4
+    },
+    {
+      "nameMusic": "Ánh Nắng Của Anh",
+      "nameSing": "Đức Phuc",
+      "time": "2023-08-15",
+      "numberLikes": 1500,
+      "status": {
+        "idStatus": 2,
+        "nameStatus": "Lưu trữ"
+      },
+      "id": 5
+    },
+    {
+      "nameMusic": "Sóng gió",
+      "nameSing": "KCM",
+      "time": "2023-08-03",
+      "numberLikes": 15000,
+      "status": {
+        "idStatus": 2,
+        "nameStatus": "Lưu trữ"
+      },
+      "id": 6
+    },
+    {
+      "nameMusic": "Chiếc Khăn Gía Âms",
+      "nameSing": "Khánh Phương",
+      "time": "2023-07-30",
+      "numberLikes": 0,
+      "status": {
+        "idStatus": 1,
+        "nameStatus": "Công khai"
+      },
+      "id": 7
+    },
+    {
+      "nameMusic": "Anh Khác Hay Em Khác",
+      "nameSing": "Khắc Việt",
+      "time": "2023-08-16",
+      "numberLikes": 1500,
+      "status": {
+        "idStatus": 1,
+        "nameStatus": "Công khai"
+      },
+      "id": 8
+    },
+    {
+      "nameMusic": "Bạc Phận",
+      "nameSing": "Jack",
+      "time": "2023-07-30",
+      "numberLikes": 0,
+      "status": {
+        "idStatus": 1,
+        "nameStatus": "Công khai"
+      },
+      "id": 9
+    },
+    {
+      "nameMusic": "Nguyễn Anh Nhàn",
+      "nameSing": "Nguyễn Anh Nhàn ",
+      "time": "2023-08-10",
+      "numberLikes": 20,
+      "status": {
+        "idStatus": 1,
+        "nameStatus": "Công khai"
+      },
+      "id": 10
+    },
+    {
+      "nameMusic": "hÀ NỘI MUA THU",
+      "nameSing": "VIET NAM",
+      "time": "2023-08-10",
+      "numberLikes": 0,
+      "status": {
+        "idStatus": 1,
+        "nameStatus": "Công khai"
+      },
+      "id": 11
+    }
+  ],
+  "status": [
+    {
+      "idStatus": 1,
+      "nameStatus": "Công khai"
+    },
+    {
+      "idStatus": 2,
+      "nameStatus": "Lưu trữ"
+    }
+  ]
+}

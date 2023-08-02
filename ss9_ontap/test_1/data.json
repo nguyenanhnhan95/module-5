@@ -1,0 +1,36 @@
+{
+  "customers": [
+    {
+      "name": "Nguyen Anh Nhan",
+      "birth": "2023-06-27",
+      "gender": "female",
+      "address": "Le son",
+      "typeCustomer": {
+        "idType": 2,
+        "nameType": "Regular"
+      },
+      "id": 3
+    },
+    {
+      "name": "Tran Dinh Sang",
+      "birth": "2023-07-12",
+      "gender": "female",
+      "address": "ádasdasdasd",
+      "typeCustomer": {
+        "idType": 1,
+        "nameType": "Vip"
+      },
+      "id": 4
+    }
+  ],
+  "typeCustomer": [
+    {
+      "idType": 1,
+      "nameType": "Vip"
+    },
+    {
+      "idType": 2,
+      "nameType": "Regular"
+    }
+  ]
+}

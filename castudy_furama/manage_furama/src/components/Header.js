@@ -42,8 +42,8 @@ function Header(){
                             <div className="nav-menu">
                               <nav className="mainmenu">
                                 <ul>
-                                  <li className="active"><a href="./index.html">Home</a></li>
-                                  <li><Link to="/">Service</Link></li>
+                                  {/* <li className="active"><a href="./index.html">Home</a></li> */}
+                                  <li><Link to="/">Home</Link></li>
                                   <li><Link to="/">Management </Link>
                                     <ul className="dropdown">
                                     

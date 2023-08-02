@@ -1,0 +1,75 @@
+import Swal from "sweetalert2";
+import "bootstrap/dist/css/bootstrap.css";
+import *as yup from "yup"
+<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+--table
+<div class="container-xl">
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-4" >
+                 
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#addNewService" class="btn btn-success"><i class="material-icons"></i> <span>Add New Service</span></button>
+                  
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8"></div>
+                <div class="col-sm-4">
+                    <div class="search-box">
+                        <i class="material-icons"></i>
+                        <input type="text"  class="form-control" placeholder="Search…" />
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped ">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name </th>
+                            <th>Birth</th>
+                            <th>Gender </th>
+                            <th>Price</th>
+                            <th>Type Customer </th>
+                            <th>Delete</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+             
+
+                    </tbody>
+                </table>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><button class="page-link" >Previous</button></li>
+
+                        <li class="page-item"><button class="page-link" >Next</button></li>
+                    </ul>
+                </nav>
+                {/* <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={handlePageChange}
+          /> */}
+
+            </div>
+        </div>
+
+
+
