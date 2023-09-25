@@ -13,7 +13,7 @@ function DeleteModal(props){
         <>
         <a
         onClick={
-          showModal} className={icon.name} >
+          showModal} className={icon}>
        
        <i style={{ fontStyle: "normal", color: icon.color }}>{icon.show}</i>
       </a>

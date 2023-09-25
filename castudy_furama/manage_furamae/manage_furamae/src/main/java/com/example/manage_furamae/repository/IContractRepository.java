@@ -5,6 +5,7 @@ import com.example.manage_furamae.projection.IContractProjection;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
@@ -15,4 +16,5 @@ public interface IContractRepository extends JpaRepository<Contract,Integer> {
             "join customers cu on cu.id_customer=c.id_customer\n" +
             "join facilities f on f.id_facility=c.id_facility",nativeQuery = true)
     Page<IContractProjection> findAllContract(Pageable pageable);
+
 }
